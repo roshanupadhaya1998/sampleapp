@@ -1,13 +1,13 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: simple-node-app
+  name: sampleapp
 spec:
   destination:
-    server: 'https://51FD48B3916449CA5F273B5A2CA9F9C6.gr7.us-east-1.eks.amazonaws.com'
+    server: '51FD48B3916449CA5F273B5A2CA9F9C6.gr7.us-east-1.eks.amazonaws.com'
     namespace: eksargocd
   source:
-    repoURL: 'https://github.com/roshanupadhaya1998/sampleapp.git'
+    repoURL: 'https://github.com/roshanupadhaya1998/sampleapp'
     path: 'kubernetesmanifest'
     targetRevision: HEAD
   project: default
