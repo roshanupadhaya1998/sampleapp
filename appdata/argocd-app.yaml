@@ -1,0 +1,13 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: simple-node-app
+spec:
+  destination:
+    server: 'https://kubernetes.default.svc'
+    namespace: default
+  source:
+    repoURL: 'https://github.com/roshanupadhaya1998/sampleapp.git'
+    path: 'kubernetesmanifest'
+    targetRevision: HEAD
+  project: default
