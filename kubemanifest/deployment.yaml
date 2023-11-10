@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: simple-node-app
-          image: https://github.com/roshanupadhaya1998/sampleapp.git:latest
+          image: roshanupadhaya1998/sampleapp:latest
           ports:
             - containerPort: 3000
